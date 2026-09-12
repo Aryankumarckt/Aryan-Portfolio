@@ -1,0 +1,907 @@
+/* =========================================
+   HOME PAGE
+========================================= */
+
+.home {
+    min-height: calc(100vh - 75px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 70px;
+
+    padding: 80px 10% 100px;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(103, 232, 249, 0.45),
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(110, 231, 183, 0.40),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            135deg,
+            #ecfeff 0%,
+            #f0fdfa 50%,
+            #ffffff 100%
+        );
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+.home-content {
+    flex: 1;
+
+    max-width: 650px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================================
+   GREETING
+========================================= */
+
+.home-greeting {
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    margin-bottom: 20px;
+
+    background: rgba(255, 255, 255, 0.88);
+
+    color: #0f766e;
+
+    border: 1px solid #99f6e4;
+
+    border-radius: 30px;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 8px 20px
+        rgba(13, 148, 136, 0.10);
+}
+
+
+/* =========================================
+   NAME
+========================================= */
+
+.home h1 {
+    font-size: 64px;
+
+    line-height: 1.1;
+
+    margin-bottom: 12px;
+
+    color: #134e4a;
+
+    font-weight: 800;
+}
+
+
+.home h1 span {
+    color: #0891b2;
+}
+
+
+/* =========================================
+   ROLE
+========================================= */
+
+.home h2 {
+    font-size: 27px;
+
+    color: #115e59;
+
+    margin-bottom: 8px;
+}
+
+
+.home h3 {
+    font-size: 20px;
+
+    color: #0e7490;
+
+    margin-bottom: 20px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.home-description {
+    max-width: 600px;
+
+    color: #475569;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   CURRENTLY LEARNING
+========================================= */
+
+.learning-badge {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 11px 16px;
+
+    margin-bottom: 18px;
+
+    background: rgba(255, 255, 255, 0.90);
+
+    border: 1px solid #99f6e4;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 8px 20px
+        rgba(13, 148, 136, 0.08);
+}
+
+
+.learning-badge span {
+    font-size: 20px;
+}
+
+
+.learning-badge p {
+    margin: 0;
+
+    color: #475569;
+
+    font-size: 14px;
+}
+
+
+.learning-badge strong {
+    color: #0f766e;
+}
+
+
+/* =========================================
+   QUICK SKILLS
+========================================= */
+
+.quick-skills {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 5px;
+
+    margin-bottom: 5px;
+}
+
+
+.quick-skill {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 10px 15px;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    color: #475569;
+
+    border: 1px solid #ccfbf1;
+
+    border-radius: 25px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 15px
+        rgba(13, 148, 136, 0.06);
+
+    transition: all 0.3s ease;
+}
+
+
+.quick-skill:hover {
+    transform: translateY(-5px) scale(1.04);
+
+    background:
+        linear-gradient(
+            135deg,
+            #0f766e,
+            #0891b2
+        );
+
+    color: white;
+
+    border-color: #0891b2;
+
+    box-shadow:
+        0 12px 25px
+        rgba(8, 145, 178, 0.25);
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.home-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin-top: 28px;
+}
+
+
+.primary-btn,
+.secondary-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 14px 26px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    transition: all 0.3s ease;
+}
+
+
+/* PRIMARY BUTTON */
+
+.primary-btn {
+    background:
+        linear-gradient(
+            135deg,
+            #0f766e,
+            #0891b2
+        );
+
+    color: white;
+
+    box-shadow:
+        0 10px 25px
+        rgba(8, 145, 178, 0.25);
+}
+
+
+.primary-btn:hover {
+    transform: translateY(-4px) scale(1.02);
+
+    box-shadow:
+        0 16px 32px
+        rgba(8, 145, 178, 0.35);
+}
+
+
+/* SECONDARY BUTTON */
+
+.secondary-btn {
+    background: white;
+
+    color: #0f766e;
+
+    border: 2px solid #99f6e4;
+
+    box-shadow:
+        0 6px 15px
+        rgba(13, 148, 136, 0.06);
+}
+
+
+.secondary-btn:hover {
+    background: #f0fdfa;
+
+    transform: translateY(-4px);
+
+    border-color: #14b8a6;
+}
+
+
+/* =========================================
+   RIGHT VISUAL
+========================================= */
+
+.home-visual {
+    flex: 1;
+
+    min-height: 480px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================================
+   MAIN CIRCLE
+========================================= */
+
+.visual-shape {
+    width: 360px;
+
+    height: 360px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #14b8a6,
+            #06b6d4,
+            #67e8f9
+        );
+
+    box-shadow:
+        0 25px 60px
+        rgba(8, 145, 178, 0.22);
+
+    animation:
+        pulseCircle 5s ease-in-out infinite;
+}
+
+
+/* =========================================
+   MAIN ICON
+========================================= */
+
+.main-icon {
+    width: 145px;
+
+    height: 145px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #ecfeff
+        );
+
+    border-radius: 50%;
+
+    font-size: 65px;
+
+    box-shadow:
+        0 15px 35px
+        rgba(13, 148, 136, 0.15);
+
+    animation:
+        floatMain 4s ease-in-out infinite;
+}
+
+
+/* =========================================
+   FLOATING CARDS
+========================================= */
+
+.floating-card {
+    position: absolute;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 13px 18px;
+
+    min-width: 130px;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border: 1px solid #ccfbf1;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 12px 30px
+        rgba(13, 148, 136, 0.12);
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+
+    animation:
+        floatCard 4s ease-in-out infinite;
+}
+
+
+/* CARD ICON */
+
+.floating-card span {
+    width: 38px;
+
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #ecfeff;
+
+    border-radius: 10px;
+
+    font-size: 20px;
+
+    transition: all 0.3s ease;
+}
+
+
+/* CARD TEXT */
+
+.floating-card p {
+    margin: 0;
+
+    font-size: 14px;
+
+    color: #134e4a;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    transition: all 0.3s ease;
+}
+
+
+/* =========================================
+   FLOATING CARD HOVER
+========================================= */
+
+.floating-card:hover {
+    transform: translateY(-10px) scale(1.06);
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #f0fdfa
+        );
+
+    box-shadow:
+        0 20px 40px
+        rgba(8, 145, 178, 0.22);
+
+    z-index: 10;
+
+    animation-play-state: paused;
+}
+
+
+.floating-card:hover span {
+    background:
+        linear-gradient(
+            135deg,
+            #14b8a6,
+            #06b6d4
+        );
+
+    transform:
+        rotate(-8deg)
+        scale(1.1);
+}
+
+
+.floating-card:hover p {
+    color: #0891b2;
+}
+
+
+/* =========================================
+   CARD POSITIONS
+========================================= */
+
+.card-python {
+    top: 15px;
+
+    left: -55px;
+}
+
+
+.card-sql {
+    top: 35px;
+
+    right: -55px;
+
+    animation-delay: 1s;
+}
+
+
+.card-web {
+    bottom: 40px;
+
+    left: -65px;
+
+    animation-delay: 2s;
+}
+
+
+.card-learning {
+    bottom: 5px;
+
+    right: -55px;
+
+    animation-delay: 3s;
+}
+
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes floatMain {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+}
+
+
+@keyframes floatCard {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+}
+
+
+@keyframes pulseCircle {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.03);
+    }
+
+}
+
+
+/* =========================================
+   SCROLL INDICATOR
+========================================= */
+
+.scroll-explore {
+    position: absolute;
+
+    bottom: 20px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 6px;
+
+    color: #64748b;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    z-index: 3;
+}
+
+
+.scroll-explore:hover {
+    color: #0f766e;
+}
+
+
+.scroll-mouse {
+    width: 22px;
+
+    height: 34px;
+
+    border: 2px solid #14b8a6;
+
+    border-radius: 20px;
+
+    position: relative;
+}
+
+
+.scroll-mouse::before {
+    content: "";
+
+    position: absolute;
+
+    width: 5px;
+
+    height: 5px;
+
+    background: #0891b2;
+
+    border-radius: 50%;
+
+    left: 50%;
+
+    top: 6px;
+
+    transform: translateX(-50%);
+
+    animation:
+        scrollMove 1.5s ease infinite;
+}
+
+
+@keyframes scrollMove {
+
+    0% {
+        opacity: 0;
+
+        transform:
+            translateX(-50%)
+            translateY(0);
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+
+        transform:
+            translateX(-50%)
+            translateY(12px);
+    }
+
+}
+
+
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .home {
+        gap: 35px;
+
+        padding-left: 7%;
+
+        padding-right: 7%;
+    }
+
+
+    .home h1 {
+        font-size: 52px;
+    }
+
+
+    .visual-shape {
+        width: 310px;
+
+        height: 310px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .home {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 90px 7% 70px;
+
+        gap: 15px;
+    }
+
+
+    .home-content {
+        text-align: center;
+    }
+
+
+    .home h1 {
+        font-size: 45px;
+    }
+
+
+    .home h2 {
+        font-size: 23px;
+    }
+
+
+    .home h3 {
+        font-size: 18px;
+    }
+
+
+    .home-description {
+        font-size: 16px;
+    }
+
+
+    .learning-badge {
+        justify-content: center;
+
+        text-align: center;
+    }
+
+
+    .quick-skills {
+        justify-content: center;
+    }
+
+
+    .home-buttons {
+        justify-content: center;
+    }
+
+
+    .home-visual {
+        min-height: 400px;
+
+        width: 100%;
+    }
+
+
+    .visual-shape {
+        width: 280px;
+
+        height: 280px;
+    }
+
+
+    .main-icon {
+        width: 115px;
+
+        height: 115px;
+
+        font-size: 50px;
+    }
+
+
+    .floating-card {
+        padding: 8px 11px;
+
+        min-width: auto;
+    }
+
+
+    .floating-card p {
+        font-size: 11px;
+    }
+
+
+    .floating-card span {
+        width: 32px;
+
+        height: 32px;
+
+        font-size: 17px;
+    }
+
+
+    .card-python {
+        left: -10px;
+    }
+
+
+    .card-sql {
+        right: -10px;
+    }
+
+
+    .card-web {
+        left: -10px;
+    }
+
+
+    .card-learning {
+        right: -10px;
+    }
+
+
+    .scroll-explore {
+        display: none;
+    }
+
+}
